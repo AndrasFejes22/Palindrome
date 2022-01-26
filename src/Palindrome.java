@@ -16,15 +16,12 @@ public class Palindrome {
 
         sb.append(str);
 
-        //System.out.println("sb.append(str): "+sb.append(str));
-
         StringBuffer str2 = sb.reverse();
 
         //System.out.println("str: "+str2);
 
-        String str3 = str2.toString();//ha ez a lépés nincs akkor lesz egy:
-        //:"Unlikely argument type for equals(): StringBuffer seems to be unrelated to String" warning az if statementben
-
+        String str3 = str2.toString();
+        
         if(str.equals(str3)) {
             System.out.println("This is palindrom");
             return true;
